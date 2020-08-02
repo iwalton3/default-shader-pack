@@ -12,8 +12,8 @@
             "settings": [
                 ["hwdec", "auto-copy"],
                 ["profile", "gpu-hq"],
-                ["fbo_format", "rgba16f"],
-                ["gpu_api", "opengl"]
+                ["gpu_api", "opengl"],
+                ["fbo_format", "rgba16f"]
             ]
         },
         "static-grain-default": {
