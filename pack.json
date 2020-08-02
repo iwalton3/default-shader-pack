@@ -3,15 +3,17 @@
         "deband-default": {
             "settings": [
                 ["deband", true],
-                ["deband-grain", 0],
-                ["deband-range", 12],
-                ["deband-threshold", 32]
+                ["deband_grain", 0],
+                ["deband_range", 12],
+                ["deband_threshold", 32]
             ]
         },
         "hwdec-default": {
             "settings": [
                 ["hwdec", "auto-copy"],
-                ["profile", "gpu-hq"]
+                ["profile", "gpu-hq"],
+                ["fbo_format", "rgba16f"],
+                ["gpu_api", "opengl"]
             ]
         },
         "static-grain-default": {
@@ -31,8 +33,7 @@
                 "FSRCNNX_x2_16-0-4-1.glsl"
             ],
             "settings": [
-                ["scale", "ewa_lanczos"],
-                ["fbo-format", "rgba16f"]
+                ["scale", "ewa_lanczos"]
             ]
         },
         "fsrcnnx": {
@@ -40,8 +41,7 @@
                 "FSRCNNX_x2_8-0-4-1.glsl"
             ],
             "settings": [
-                ["scale", "ewa_lanczos"],
-                ["fbo-format", "rgba16f"]
+                ["scale", "ewa_lanczos"]
             ]
         },
         "ssim-downscaler": {
@@ -50,8 +50,7 @@
             ],
             "settings": [
                 ["dscale", "mitchell"],
-                ["linear-downscaling", "no"],
-                ["fbo-format", "rgba16f"]
+                ["linear_downscaling", "no"]
             ]
         },
         "krig-bilateral": {
@@ -59,24 +58,23 @@
                 "KrigBilateral.glsl"
             ],
             "settings": [
-                ["cscale", "mitchell"],
-                ["fbo-format", "rgba16f"]
+                ["cscale", "mitchell"]
             ]
         },
         "dither-fruit-default": {
             "settings": [
-                ["dither-depth", "auto"],
+                ["dither_depth", "auto"],
                 ["dither", "fruit"]
             ]
         },
         "tscale-box": {
             "settings": [
                 ["interpolation", true],
-                ["video-sync", "display-resample"],
+                ["video_sync", "display-resample"],
                 ["tscale", "box"],
-                ["tscale-window", "quadric"],
-                ["tscale-clamp", 0.0],
-                ["tscale-radius", 1.025]
+                ["tscale_window", "quadric"],
+                ["tscale_clamp", 0.0],
+                ["tscale_radius", 1.025]
             ]
         }
     },
@@ -87,7 +85,9 @@
         "dither-fruit-default"
     ],
     "setting-revert-ignore": [
-        "profile"
+        "profile",
+        "dscale",
+        "gpu_api"
     ],
     "profiles": {
         "generic": {
