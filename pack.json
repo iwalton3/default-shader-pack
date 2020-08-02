@@ -1,0 +1,165 @@
+{
+    "setting-groups": {
+        "deband-default": {
+            "settings": [
+                ["deband", true],
+                ["deband-grain", 0],
+                ["deband-range", 12],
+                ["deband-threshold", 32]
+            ]
+        },
+        "hwdec-default": {
+            "settings": [
+                ["hwdec", "auto-copy"],
+                ["profile", "gpu-hq"]
+            ]
+        },
+        "static-grain-default": {
+            "shaders": [
+                "noise_static_luma.hook",
+                "noise_static_chroma.hook"
+            ]
+        },
+        "static-grain-strong": {
+            "shaders": [
+                "noise_static_luma_strong.hook",
+                "noise_static_chroma_strong.hook"
+            ]
+        },
+        "fsrcnnx-high": {
+            "shaders": [
+                "FSRCNNX_x2_16-0-4-1.glsl"
+            ],
+            "settings": [
+                ["scale", "ewa_lanczos"],
+                ["fbo-format", "rgba16f"]
+            ]
+        },
+        "fsrcnnx": {
+            "shaders": [
+                "FSRCNNX_x2_8-0-4-1.glsl"
+            ],
+            "settings": [
+                ["scale", "ewa_lanczos"],
+                ["fbo-format", "rgba16f"]
+            ]
+        },
+        "ssim-downscaler": {
+            "shaders": [
+                "SSimDownscaler.glsl"
+            ],
+            "settings": [
+                ["dscale", "mitchell"],
+                ["linear-downscaling", "no"],
+                ["fbo-format", "rgba16f"]
+            ]
+        },
+        "krig-bilateral": {
+            "shaders": [
+                "KrigBilateral.glsl"
+            ],
+            "settings": [
+                ["cscale", "mitchell"],
+                ["fbo-format", "rgba16f"]
+            ]
+        },
+        "dither-fruit-default": {
+            "settings": [
+                ["dither-depth", "auto"],
+                ["dither", "fruit"]
+            ]
+        },
+        "tscale-box": {
+            "settings": [
+                ["interpolation", true],
+                ["video-sync", "display-resample"],
+                ["tscale", "box"],
+                ["tscale-window", "quadric"],
+                ["tscale-clamp", 0.0],
+                ["tscale-radius", 1.025]
+            ]
+        }
+    },
+    "default-setting-groups": [
+        "deband-default",
+        "hwdec-default",
+        "static-grain-default",
+        "dither-fruit-default"
+    ],
+    "setting-revert-ignore": [
+        "profile"
+    ],
+    "profiles": {
+        "generic": {
+            "displayname": "Generic (FSRCNNX)",
+            "setting-groups": [
+                "fsrcnnx",
+                "ssim-downscaler",
+                "krig-bilateral"
+            ]
+        },
+        "generic-high": {
+            "displayname": "Generic High (FSRCNNX x16)",
+            "setting-groups": [
+                "fsrcnnx-high",
+                "ssim-downscaler",
+                "krig-bilateral"
+            ]
+        },
+        "anime4k-x4-faithful": {
+            "displayname": "Anime4K x4 Faithful (For SD)",
+            "shaders": [
+                "Anime4K_3.0_Upscale_CNN_M_x2_Deblur.glsl",
+                "Anime4K_3.0_Auto_Downscale_Pre_x4.glsl",
+                "Anime4K_3.0_Upscale_CNN_L_x2_Denoise.glsl"
+            ]
+        },
+        "anime4k-x4-perceptual": {
+            "displayname": "Anime4K x4 Perceptual (For SD)",
+            "shaders": [
+                "Anime4K_3.0_Upscale_CNN_M_x2_Deblur.glsl",
+                "Anime4K_3.0_ThinLines_HQ.glsl",
+                "Anime4K_3.0_DarkLines_HQ.glsl",
+                "Anime4K_3.0_Auto_Downscale_Pre_x4.glsl",
+                "Anime4K_3.0_Upscale_CNN_L_x2_Denoise.glsl"
+            ]
+        },
+        "anime4k-x4-perceptual-deblur": {
+            "displayname": "Anime4K x4 Perceptual + Deblur (For SD)",
+            "shaders": [
+                "Anime4K_3.0_Upscale_CNN_M_x2_Deblur.glsl",
+                "Anime4K_3.0_ThinLines_HQ.glsl",
+                "Anime4K_3.0_DarkLines_HQ.glsl",
+                "Anime4K_3.0_Deblur_DoG.glsl",
+                "Anime4K_3.0_Auto_Downscale_Pre_x4.glsl",
+                "Anime4K_3.0_Upscale_CNN_L_x2_Denoise.glsl"
+            ]
+        },
+        "anime4k-x2-faithful": {
+            "displayname": "Anime4K x2 Faithful (For HD)",
+            "shaders": [
+                "Anime4K_3.0_Upscale_CNN_M_x2_Deblur.glsl",
+                "Anime4K_3.0_Denoise_Bilateral_Mode.glsl"
+            ]
+        },
+        "anime4k-x2-perceptual": {
+            "displayname": "Anime4K x2 Perceptual (For HD)",
+            "shaders": [
+                "Anime4K_3.0_Upscale_CNN_M_x2_Deblur.glsl",
+                "Anime4K_3.0_ThinLines_HQ.glsl",
+                "Anime4K_3.0_DarkLines_HQ.glsl",
+                "Anime4K_3.0_Denoise_Bilateral_Mode.glsl"
+            ]
+        },
+        "anime4k-x2-perceptual-deblur": {
+            "displayname": "Anime4K x2 Perceptual + Deblur (For HD)",
+            "shaders": [
+                "Anime4K_3.0_Upscale_CNN_M_x2_Deblur.glsl",
+                "Anime4K_3.0_ThinLines_HQ.glsl",
+                "Anime4K_3.0_DarkLines_HQ.glsl",
+                "Anime4K_3.0_Deblur_DoG.glsl",
+                "Anime4K_3.0_Denoise_Bilateral_Mode.glsl"
+            ]
+        }
+    }
+}
