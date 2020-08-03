@@ -47,7 +47,7 @@ higher-end computers and may be processor intensive. They are also opinionated.
 If you have any suggestions for how to improve this pack or if there are any
 outright misconfigurations, please let me know.
 
-Some upscalers, such as Anime4K, have been viewed as controversial. Please to not
+Some upscalers, such as Anime4K, have been viewed as controversial. Please do not
 use the issue tracker to debate the merits of certain upscalers. It is ultimately
 the user's decision what upscalers they use and what they feel improves their viewing
 experience.
