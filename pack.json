@@ -186,24 +186,8 @@
                 "Anime4K_3.0_Denoise_Bilateral_Mode.glsl"
             ]
         },
-        "nnedi-low": {
-            "displayname": "NNEDI3 16 Neurons",
-            "setting-groups": [
-                "nnedi-low",
-                "ssim-downscaler",
-                "krig-bilateral"
-            ]
-        },
-        "nnedi-medium": {
-            "displayname": "NNEDI3 32 Neurons",
-            "setting-groups": [
-                "nnedi-medium",
-                "ssim-downscaler",
-                "krig-bilateral"
-            ]
-        },
         "nnedi-high": {
-            "displayname": "NNEDI3 64 Neurons",
+            "displayname": "NNEDI3 (64 Neurons)",
             "setting-groups": [
                 "nnedi-high",
                 "ssim-downscaler",
@@ -211,17 +195,9 @@
             ]
         },
         "nnedi-very-high": {
-            "displayname": "NNEDI3 128 Neurons",
+            "displayname": "NNEDI3 High (128 Neurons)",
             "setting-groups": [
                 "nnedi-very-high",
-                "ssim-downscaler",
-                "krig-bilateral"
-            ]
-        },
-        "nnedi-placebo": {
-            "displayname": "NNEDI3 256 Neurons",
-            "setting-groups": [
-                "nnedi-placebo",
                 "ssim-downscaler",
                 "krig-bilateral"
             ]
