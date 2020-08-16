@@ -28,6 +28,8 @@ the shader presets cause performance issues.
  - Anime4K x2 Perceptual (For HD) - Includes above profile, but also makes lines darker and thinner.
  - Anime4K x2 Perceptual + Deblur (For HD) - Includes above profiles, but also reduces blur.
      - This may cause aliasing. You may want to turn it off depending on the video source.
+ - NNEDI3 (64 Neurons) - Default profile for NNEDI3.
+ - NNEDI3 High (128 Neurons) - NNEDI3 profile with higher processing requirements.
 
 ## Included Shaders
 
