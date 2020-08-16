@@ -36,6 +36,7 @@ the shader presets cause performance issues.
  - [Static Grain](https://github.com/wopian/mpv-config)
  - [KrigBilateral](https://gist.github.com/igv/a015fc885d5c22e6891820ad89555637)
  - [SSimDownscaler](https://gist.github.com/igv/36508af3ffc84410fe39761d6969be10)
+ - [NNEDI3](https://github.com/bjin/mpv-prescalers)
 
 The configuration groups for some of these shaders are from the [MPV Configuration Guide](https://iamscum.wordpress.com/guides/videoplayback-guide/mpv-conf/).
 

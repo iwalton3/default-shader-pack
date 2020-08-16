@@ -6,6 +6,7 @@ shader are as follows:
  - Static Grain - [The Unlicense](https://github.com/wopian/mpv-config/blob/master/LICENSE)
  - KrigBilateral - [GNU Lesser General Public License](https://gist.github.com/igv/a015fc885d5c22e6891820ad89555637)
  - SSimDownscaler - [GNU Lesser General Public License](https://gist.github.com/igv/36508af3ffc84410fe39761d6969be10)
+ - NNEDI3 - [GNU Lesser General Public License](https://github.com/bjin/mpv-prescalers/blob/master/LICENSE)
 
 The documentation and configurations for this pack are available under these terms:
 
