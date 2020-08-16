@@ -76,6 +76,31 @@
                 ["tscale_clamp", 0.0],
                 ["tscale_radius", 1.025]
             ]
+        },
+        "nnedi-low": {
+            "shaders": [
+                "nnedi3-nns16-win8x6.hook"
+            ]
+        },
+        "nnedi-medium": {
+            "shaders": [
+                "nnedi3-nns32-win8x6.hook"
+            ]
+        },
+        "nnedi-high": {
+            "shaders": [
+                "nnedi3-nns64-win8x6.hook"
+            ]
+        },
+        "nnedi-very-high": {
+            "shaders": [
+                "nnedi3-nns128-win8x6.hook"
+            ]
+        },
+        "nnedi-placebo": {
+            "shaders": [
+                "nnedi3-nns256-win8x6.hook"
+            ]
         }
     },
     "default-setting-groups": [
@@ -159,6 +184,46 @@
                 "Anime4K_3.0_DarkLines_HQ.glsl",
                 "Anime4K_3.0_Deblur_DoG.glsl",
                 "Anime4K_3.0_Denoise_Bilateral_Mode.glsl"
+            ]
+        },
+        "nnedi-low": {
+            "displayname": "NNEDI3 16 Neurons",
+            "setting-groups": [
+                "nnedi-low",
+                "ssim-downscaler",
+                "krig-bilateral"
+            ]
+        },
+        "nnedi-medium": {
+            "displayname": "NNEDI3 32 Neurons",
+            "setting-groups": [
+                "nnedi-medium",
+                "ssim-downscaler",
+                "krig-bilateral"
+            ]
+        },
+        "nnedi-high": {
+            "displayname": "NNEDI3 64 Neurons",
+            "setting-groups": [
+                "nnedi-high",
+                "ssim-downscaler",
+                "krig-bilateral"
+            ]
+        },
+        "nnedi-very-high": {
+            "displayname": "NNEDI3 128 Neurons",
+            "setting-groups": [
+                "nnedi-very-high",
+                "ssim-downscaler",
+                "krig-bilateral"
+            ]
+        },
+        "nnedi-placebo": {
+            "displayname": "NNEDI3 256 Neurons",
+            "setting-groups": [
+                "nnedi-placebo",
+                "ssim-downscaler",
+                "krig-bilateral"
             ]
         }
     }
