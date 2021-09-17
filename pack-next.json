@@ -123,7 +123,90 @@
                 "krig-bilateral"
             ]
         },
+        "generic-high": {
+            "subtype": ["hq"],
+            "displayname": "Generic High (FSRCNNX x16)",
+            "setting-groups": [
+                "fsrcnnx-high",
+                "ssim-downscaler",
+                "krig-bilateral"
+            ]
+        },
+        "anime4k-high-a": {
+            "subtype": ["hq"],
+            "displayname": "Anime4K A (HQ) - For Very Blurry/Compressed",
+            "shaders": [
+                "Anime4K_Clamp_Highlights.glsl",
+                "Anime4K_Restore_CNN_VL.glsl",
+                "Anime4K_Upscale_CNN_x2_VL.glsl",
+                "Anime4K_AutoDownscalePre_x2.glsl",
+                "Anime4K_AutoDownscalePre_x4.glsl",
+                "Anime4K_Upscale_CNN_x2_M.glsl"
+            ]
+        },
+        "anime4k-high-b": {
+            "subtype": ["hq"],
+            "displayname": "Anime4K B (HQ) - For Blurry/Ringing",
+            "shaders": [
+                "Anime4K_Clamp_Highlights.glsl",
+                "Anime4K_Restore_CNN_Soft_VL.glsl",
+                "Anime4K_Upscale_CNN_x2_VL.glsl",
+                "Anime4K_AutoDownscalePre_x2.glsl",
+                "Anime4K_AutoDownscalePre_x4.glsl",
+                "Anime4K_Upscale_CNN_x2_M.glsl"
+            ]
+        },
+        "anime4k-high-c": {
+            "subtype": ["hq"],
+            "displayname": "Anime4K C (HQ) - For Crisp/Sharp",
+            "shaders": [
+                "Anime4K_Clamp_Highlights.glsl",
+                "Anime4K_Upscale_Denoise_CNN_x2_VL.glsl",
+                "Anime4K_AutoDownscalePre_x2.glsl",
+                "Anime4K_AutoDownscalePre_x4.glsl",
+                "Anime4K_Upscale_CNN_x2_M.glsl"
+            ]
+        },
+        "anime4k-high-aa": {
+            "subtype": ["hq"],
+            "displayname": "Anime4K AA (HQ) - For Very Blurry/Compressed",
+            "shaders": [
+                "Anime4K_Clamp_Highlights.glsl",
+                "Anime4K_Restore_CNN_VL.glsl",
+                "Anime4K_Upscale_CNN_x2_VL.glsl",
+                "Anime4K_AutoDownscalePre_x2.glsl",
+                "Anime4K_AutoDownscalePre_x4.glsl",
+                "Anime4K_Restore_CNN_M.glsl",
+                "Anime4K_Upscale_CNN_x2_M.glsl"
+            ]
+        },
+        "anime4k-high-bb": {
+            "subtype": ["hq"],
+            "displayname": "Anime4K BB (HQ) - For Blurry/Ringing",
+            "shaders": [
+                "Anime4K_Clamp_Highlights.glsl",
+                "Anime4K_Restore_CNN_Soft_VL.glsl",
+                "Anime4K_Upscale_CNN_x2_VL.glsl",
+                "Anime4K_AutoDownscalePre_x2.glsl",
+                "Anime4K_AutoDownscalePre_x4.glsl",
+                "Anime4K_Restore_CNN_Soft_M.glsl",
+                "Anime4K_Upscale_CNN_x2_M.glsl"
+            ]
+        },
+        "anime4k-high-ca": {
+            "subtype": ["hq"],
+            "displayname": "Anime4K CA (HQ) - For Crisp/Sharp",
+            "shaders": [
+                "Anime4K_Clamp_Highlights.glsl",
+                "Anime4K_Upscale_Denoise_CNN_x2_VL.glsl",
+                "Anime4K_AutoDownscalePre_x2.glsl",
+                "Anime4K_AutoDownscalePre_x4.glsl",
+                "Anime4K_Restore_CNN_M.glsl",
+                "Anime4K_Upscale_CNN_x2_M.glsl"
+            ]
+        },
         "anime4k-fast-a": {
+            "subtype": ["lq"],
             "displayname": "Anime4K A (Fast) - For Very Blurry/Compressed",
             "shaders": [
                 "Anime4K_Clamp_Highlights.glsl",
@@ -135,6 +218,7 @@
             ]
         },
         "anime4k-fast-b": {
+            "subtype": ["lq"],
             "displayname": "Anime4K B (Fast) - For Blurry/Ringing",
             "shaders": [
                 "Anime4K_Clamp_Highlights.glsl",
@@ -146,6 +230,7 @@
             ]
         },
         "anime4k-fast-c": {
+            "subtype": ["lq"],
             "displayname": "Anime4K C (Fast) - For Crisp/Sharp",
             "shaders": [
                 "Anime4K_Clamp_Highlights.glsl",
@@ -156,6 +241,7 @@
             ]
         },
         "anime4k-fast-aa": {
+            "subtype": ["lq"],
             "displayname": "Anime4K AA (Fast) - For Very Blurry/Compressed",
             "shaders": [
                 "Anime4K_Clamp_Highlights.glsl",
@@ -168,6 +254,7 @@
             ]
         },
         "anime4k-fast-bb": {
+            "subtype": ["lq"],
             "displayname": "Anime4K BB (Fast) - For Blurry/Ringing",
             "shaders": [
                 "Anime4K_Clamp_Highlights.glsl",
@@ -180,6 +267,7 @@
             ]
         },
         "anime4k-fast-ca": {
+            "subtype": ["lq"],
             "displayname": "Anime4K CA (Fast) - For Crisp/Sharp",
             "shaders": [
                 "Anime4K_Clamp_Highlights.glsl",
@@ -194,6 +282,15 @@
             "displayname": "NNEDI3 (64 Neurons)",
             "setting-groups": [
                 "nnedi-high",
+                "ssim-downscaler",
+                "krig-bilateral"
+            ]
+        },
+        "nnedi-very-high": {
+            "subtype": ["hq"],
+            "displayname": "NNEDI3 High (128 Neurons)",
+            "setting-groups": [
+                "nnedi-very-high",
                 "ssim-downscaler",
                 "krig-bilateral"
             ]
