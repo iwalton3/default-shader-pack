@@ -20,14 +20,7 @@ the shader presets cause performance issues.
  - Generic (FSRCNNX) - Video profile with high quality upscaling and downscaling.
  - Generic High (FSRCNNX x16) - Video profile with very high quality upscaling and downscaling.
      - This may cause dropped frames if your graphics card is not powerful.
- - Anime4K x4 Faithful (For SD) - Upscale standard definition anime videos accurately.
- - Anime4K x4 Perceptual (For SD) - Includes above profile, but also makes lines darker and thinner.
- - Anime4K x4 Perceptual + Deblur (For SD) - Includes above profiles, but also reduces blur.
-     - This may cause aliasing. You may want to turn it off depending on the video source.
- - Anime4K x2 Faithful (For HD) - Upscale high definition anime videos accurately.
- - Anime4K x2 Perceptual (For HD) - Includes above profile, but also makes lines darker and thinner.
- - Anime4K x2 Perceptual + Deblur (For HD) - Includes above profiles, but also reduces blur.
-     - This may cause aliasing. You may want to turn it off depending on the video source.
+ - Anime4K v4.0.1 - [Please read here](https://github.com/bloc97/Anime4K/blob/v4.0.1/GLSL_Instructions.md) for details.
  - NNEDI3 (64 Neurons) - Default profile for NNEDI3.
  - NNEDI3 High (128 Neurons) - NNEDI3 profile with higher processing requirements.
 
