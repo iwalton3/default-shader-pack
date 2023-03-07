@@ -17,21 +17,27 @@ the shader presets cause performance issues.
      - hwdec-default - Ensures hardware decoding is enabled.
      - static-grain-default - Adds a very small amount of static noise to help with debanding.
      - dither-fruit-default - Dithers colors to match the display color depth.
- - Generic (FSRCNNX) - Video profile with high quality upscaling and downscaling.
- - Generic High (FSRCNNX x16) - Video profile with very high quality upscaling and downscaling.
      - This may cause dropped frames if your graphics card is not powerful.
+ - NVIDIA Image Scaling
+ - AMD FidelityFX Super Resolution
+ - AMD FidelityFX Contrast Adaptive Sharpening
  - Anime4K v4.0.1 - [Please read here](https://github.com/bloc97/Anime4K/blob/v4.0.1/GLSL_Instructions.md) for details.
  - NNEDI3 (64 Neurons) - Default profile for NNEDI3.
  - NNEDI3 High (128 Neurons) - NNEDI3 profile with higher processing requirements.
+ - FSRCNNX
+ - FSRCNNX x16
 
 ## Included Shaders
 
- - [FSRCNNX](https://github.com/igv/FSRCNN-TensorFlow)
+ - [NVIDIA Image Scaling](https://gist.github.com/agyild/7e8951915b2bf24526a9343d951db214) - MIT License
+ - [AMD FidelityFX Super Resolution](https://gist.github.com/agyild/82219c545228d70c5604f865ce0b0ce5) - MIT License
+ - [AMD FidelityFX Contrast Adaptive Sharpening](https://gist.github.com/agyild/bbb4e58298b2f86aa24da3032a0d2ee6) - MIT License
  - [Anime4K](https://github.com/bloc97/Anime4K)
  - [Static Grain](https://github.com/wopian/mpv-config)
  - [KrigBilateral](https://gist.github.com/igv/a015fc885d5c22e6891820ad89555637)
  - [SSimDownscaler](https://gist.github.com/igv/36508af3ffc84410fe39761d6969be10)
  - [NNEDI3](https://github.com/bjin/mpv-prescalers)
+ - [FSRCNNX](https://github.com/igv/FSRCNN-TensorFlow)
 
 The configuration groups for some of these shaders are from the [MPV Configuration Guide](https://iamscum.wordpress.com/guides/videoplayback-guide/mpv-conf/).
 
