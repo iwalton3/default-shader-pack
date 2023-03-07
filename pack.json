@@ -115,12 +115,22 @@
         "gpu_api"
     ],
     "profiles": {
-        "generic": {
-            "displayname": "Generic (FSRCNNX)",
-            "setting-groups": [
-                "fsrcnnx",
-                "ssim-downscaler",
-                "krig-bilateral"
+        "nvscaler": {
+            "displayname": "Nvidia Image Scaler",
+            "shaders": [
+                "NVScaler.glsl"
+            ]
+        },
+        "AMD FidelityFX Super Resolution": {
+            "displayname": "AMD FidelityFX Super Resolution",
+            "shaders": [
+                "FSR.glsl"
+            ]
+        },
+        "AMD FidelityFX Contrast Adaptive Sharpening": {
+            "displayname": "AMD FidelityFX Contrast Adaptive Sharpening",
+            "shaders": [
+                "CAS-scaled.glsl"
             ]
         },
         "anime4k-fast-a": {
@@ -188,6 +198,14 @@
                 "Anime4K_AutoDownscalePre_x4.glsl",
                 "Anime4K_Restore_CNN_S.glsl",
                 "Anime4K_Upscale_CNN_x2_S.glsl"
+            ]
+        },
+        "generic": {
+            "displayname": "FSRCNNX",
+            "setting-groups": [
+                "fsrcnnx",
+                "ssim-downscaler",
+                "krig-bilateral"
             ]
         },
         "nnedi-high": {

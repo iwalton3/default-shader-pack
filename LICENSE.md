@@ -1,12 +1,15 @@
-This pack mostly consists of works created by other people. The licenses for each
-shader are as follows:
+This pack mostly consists of works created by other people. It includes the following shaders,
+which are available via the respective licenses:
 
- - FSRCNNX - [MIT License](https://github.com/igv/FSRCNN-TensorFlow/blob/master/LICENSE)
- - Anime4K - [MIT License](https://github.com/bloc97/Anime4K/blob/master/LICENSE)
- - Static Grain - [The Unlicense](https://github.com/wopian/mpv-config/blob/master/LICENSE)
- - KrigBilateral - [GNU Lesser General Public License](https://gist.github.com/igv/a015fc885d5c22e6891820ad89555637)
- - SSimDownscaler - [GNU Lesser General Public License](https://gist.github.com/igv/36508af3ffc84410fe39761d6969be10)
- - NNEDI3 - [GNU Lesser General Public License](https://github.com/bjin/mpv-prescalers/blob/master/LICENSE)
+ - [FSRCNNX](https://github.com/igv/FSRCNN-TensorFlow) - MIT License
+ - [Anime4K](https://github.com/bloc97/Anime4K) - MIT License
+ - [Static Grain](https://github.com/wopian/mpv-config) - The Unlicense
+ - [KrigBilateral](https://gist.github.com/igv/a015fc885d5c22e6891820ad89555637) - GNU Lesser General Public License
+ - [SSimDownscaler](https://gist.github.com/igv/36508af3ffc84410fe39761d6969be10) - GNU Lesser General Public License
+ - [NNEDI3](https://github.com/bjin/mpv-prescalers) - GNU Lesser General Public License
+ - [NVIDIA Image Scaling](https://gist.github.com/agyild/7e8951915b2bf24526a9343d951db214) - MIT License
+ - [AMD FidelityFX Super Resolution](https://gist.github.com/agyild/82219c545228d70c5604f865ce0b0ce5) - MIT License
+ - [AMD FidelityFX Contrast Adaptive Sharpening](https://gist.github.com/agyild/bbb4e58298b2f86aa24da3032a0d2ee6) - MIT License
 
 The documentation and configurations for this pack are available under these terms:
 
