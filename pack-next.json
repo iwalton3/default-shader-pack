@@ -11,9 +11,7 @@
         "hwdec-default": {
             "settings": [
                 ["hwdec", "auto-copy"],
-                ["profile", "gpu-hq"],
-                ["gpu_api", "opengl"],
-                ["fbo_format", "rgba16f"]
+                ["profile", "gpu-hq"]
             ]
         },
         "static-grain-default": {

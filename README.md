@@ -41,6 +41,27 @@ the shader presets cause performance issues.
 
 The configuration groups for some of these shaders are from the [MPV Configuration Guide](https://iamscum.wordpress.com/guides/videoplayback-guide/mpv-conf/).
 
+## Notes on the graphics settings
+
+Two settings this pack used to force are deliberately gone, and one that looks
+outdated is deliberately kept:
+
+ - **No `gpu-api`.** The pack used to force `opengl`. That was never about the
+   shaders — MPV cross-compiles user GLSL to SPIR-V, and every profile here
+   runs unmodified on Vulkan and compiles through the Direct3D 11 chain. It was
+   there to make the `fbo-format` value below legal. Forcing OpenGL costs HDR
+   output on Windows, where MPV would otherwise pick d3d11 or Vulkan.
+ - **No `fbo-format`.** The pack used to ask for `rgba16f`, which is an
+   OpenGL-backend format name; the Direct3D 11 backend calls the same format
+   `rgba16hf`. On d3d11 the request failed, MPV fell back to *dumb mode*, and
+   dumb mode silently disables every user shader. MPV's `auto` already tries
+   16-bit float first on whichever backend is live, and has since MPV 0.29
+   (2018) — which is the release that made asking by hand unnecessary.
+ - **`profile=gpu-hq` stays**, even though MPV's `builtin.conf` now marks it a
+   deprecated alias for `high-quality`. `high-quality` only exists in MPV 0.38
+   and newer, so naming it would break every older MPV outright. Worth
+   switching once the supported floor moves past 0.38.
+
 
 # Improvements
 
