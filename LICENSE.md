@@ -10,6 +10,7 @@ which are available via the respective licenses:
  - [NVIDIA Image Scaling](https://gist.github.com/agyild/7e8951915b2bf24526a9343d951db214) - MIT License
  - [AMD FidelityFX Super Resolution](https://gist.github.com/agyild/82219c545228d70c5604f865ce0b0ce5) - MIT License
  - [AMD FidelityFX Contrast Adaptive Sharpening](https://gist.github.com/agyild/bbb4e58298b2f86aa24da3032a0d2ee6) - MIT License
+ - [ArtCNN](https://github.com/Artoriuz/ArtCNN) - MIT License
 
 The documentation and configurations for this pack are available under these terms:
 

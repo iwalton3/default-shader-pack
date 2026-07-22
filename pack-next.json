@@ -42,6 +42,30 @@
                 ["scale", "ewa_lanczos"]
             ]
         },
+        "artcnn": {
+            "shaders": [
+                "ArtCNN_C4F16.glsl"
+            ],
+            "settings": [
+                ["scale", "ewa_lanczos"]
+            ]
+        },
+        "artcnn-high": {
+            "shaders": [
+                "ArtCNN_C4F32.glsl"
+            ],
+            "settings": [
+                ["scale", "ewa_lanczos"]
+            ]
+        },
+        "artcnn-sharp": {
+            "shaders": [
+                "ArtCNN_C4F16_DS.glsl"
+            ],
+            "settings": [
+                ["scale", "ewa_lanczos"]
+            ]
+        },
         "ssim-downscaler": {
             "shaders": [
                 "SSimDownscaler.glsl"
@@ -281,6 +305,33 @@
             "displayname": "FSRCNNX",
             "setting-groups": [
                 "fsrcnnx",
+                "ssim-downscaler",
+                "krig-bilateral"
+            ]
+        },
+        "artcnn": {
+            "displayname": "ArtCNN",
+            "setting-groups": [
+                "artcnn",
+                "ssim-downscaler",
+                "krig-bilateral"
+            ]
+        },
+        "artcnn-sharp": {
+            "displayname": "ArtCNN (Denoise + Sharpen)",
+            "setting-groups": [
+                "artcnn-sharp",
+                "ssim-downscaler",
+                "krig-bilateral"
+            ]
+        },
+        "artcnn-high": {
+            "subtype": [
+                "hq"
+            ],
+            "displayname": "ArtCNN High (C4F32)",
+            "setting-groups": [
+                "artcnn-high",
                 "ssim-downscaler",
                 "krig-bilateral"
             ]

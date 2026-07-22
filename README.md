@@ -26,6 +26,9 @@ the shader presets cause performance issues.
  - NNEDI3 High (128 Neurons) - NNEDI3 profile with higher processing requirements.
  - FSRCNNX
  - FSRCNNX x16
+ - ArtCNN - Newer luma doubler aimed at anime, and the one to try first if
+   FSRCNNX is disappointing. Three profiles: the default (C4F16), a denoising
+   and sharpening variant, and a heavier C4F32 in the `hq` group.
 
 ## Included Shaders
 
@@ -38,6 +41,7 @@ the shader presets cause performance issues.
  - [SSimDownscaler](https://gist.github.com/igv/36508af3ffc84410fe39761d6969be10)
  - [NNEDI3](https://github.com/bjin/mpv-prescalers)
  - [FSRCNNX](https://github.com/igv/FSRCNN-TensorFlow)
+ - [ArtCNN](https://github.com/Artoriuz/ArtCNN)
 
 The configuration groups for some of these shaders are from the [MPV Configuration Guide](https://iamscum.wordpress.com/guides/videoplayback-guide/mpv-conf/).
 
