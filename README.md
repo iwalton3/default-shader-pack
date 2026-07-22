@@ -29,6 +29,9 @@ the shader presets cause performance issues.
  - ArtCNN - Newer luma doubler aimed at anime, and the one to try first if
    FSRCNNX is disappointing. Three profiles: the default (C4F16), a denoising
    and sharpening variant, and a heavier C4F32 in the `hq` group.
+ - RTX Video Super Resolution - **Windows only**, and NVIDIA only. This one is
+   not a shader at all: it is a Direct3D 11 video filter, so the profile also
+   switches MPV to `d3d11` and hardware decoding to `d3d11va`.
 
 ## Included Shaders
 
@@ -44,6 +47,24 @@ the shader presets cause performance issues.
  - [ArtCNN](https://github.com/Artoriuz/ArtCNN)
 
 The configuration groups for some of these shaders are from the [MPV Configuration Guide](https://iamscum.wordpress.com/guides/videoplayback-guide/mpv-conf/).
+
+## Profiles that only run on one platform
+
+A profile may declare the platforms it can run on:
+
+```json
+"rtx-vsr": {
+    "platforms": ["windows"],
+    "displayname": "RTX Video Super Resolution",
+    "setting-groups": ["hw-d3d11va-rtxvsr"]
+}
+```
+
+Valid values are `windows`, `macos` and `linux`. A profile that omits the key
+runs everywhere, so this changes nothing for existing profiles — gating is
+opt-in, and only for profiles built around something that genuinely does not
+exist elsewhere. Clients that do not understand the key would offer the
+profile anyway, which is why gated profiles live in `pack-next.json` only.
 
 ## Notes on the graphics settings
 
